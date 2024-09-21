@@ -1,6 +1,7 @@
 # Project Title
 
 This is a Point of Sale (POS) project built using asp .net and SQL Database with Unit of Work.
+Using MVC Architecture and Razor in cshtml files.
 
 ## Description
 
