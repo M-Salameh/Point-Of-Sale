@@ -1,0 +1,13 @@
+* {
+    font-family: "Libre Baskerville", serif !important;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.button-go {
+    border-radius: 20px !important;
+    width: 50%;
+    transform: translateX(50%);
+}

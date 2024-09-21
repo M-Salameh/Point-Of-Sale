@@ -1,0 +1,614 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "select-products";
+    ViewData["Controller"] = "Product";
+    ViewData["Action"] = "Index";
+}
+@model Web.Models.PointOfSaleViewModel
+
+<link rel="stylesheet" href="~/Product/search.css">
+<link rel="stylesheet" href="~/css/Supplier/NotificationMsg.css">
+<link rel="stylesheet" href="~/css/NoDataFound.css">
+<link rel="stylesheet" href="~/css/TableAndStuff.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/animate.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/aos.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/style.css">
+<link rel="stylesheet" href="~/css/ProductCartStyle.css">
+
+
+
+<div class="page-heading bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7" style="padding-top:20px">
+                <h1>Products</h1>
+                <p class="mb-4"><a href="#">Products</a> / <strong>Select Products For <span>@Model.Customer.Name</span></strong></p>
+
+                <div class="mb-5">
+                    <a onclick="submitServe(@Model.Customer.Id)" class="btn btn-outline-black btn-sm btn-block">Go To Cart</a>
+                    <a class="btn btn-outline-black btn-sm btn-block" onclick="clearCart(@Model.Customer.Id)">Clear The Cart</a>
+
+                </div>
+
+                <form target="_blank" id="serve-@Model.Customer.Id" style="margin-right:10px;" method="post" action="@Url.Action("Cart", "PointOfSale")">
+                    <label class="d-none" for="id">ID:</label>
+                    <input type="number" name="id" class="d-none" value="@Model.Customer.Id" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Product Information</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="overflow-y:scroll">
+
+
+                <div class="d-flex justify-content-center align-content-between" style="height:300px;font-size:25px !important">
+                    <div class="col-md-6">
+                        <img src="" style="padding-right:20px" class="circle col-12" id="img-src-edit" alt="Product Image" width="200">
+                        <b style="margin-bottom:3px">Description</b>
+                        <p id="productSpecification"></p>
+                    </div>
+                    <div class="col-md-6 text-start">
+
+                        <b style="margin-bottom:3px;margin-top:3px">Name</b>
+                        <p id="productName"></p>
+
+                        <b style="margin-bottom:6px">Price</b>
+                        <p id="productPrice"></p>
+
+                        <b style="margin-bottom:3px;margin-top:3px">Available Quantity</b>
+                        <p id="productQuantity"></p>
+                        <b style="margin-bottom:3px;margin-top:3px">Selected Quantity</b>
+                        <div style="margin-bottom:3px;margin-top:3px">
+                            <input type="number" class="block" id="selectedQuantity" />
+                        </div>
+                        @*<p id="selectedQuantity"></p>*@
+                        <b style="margin-bottom:3px;margin-top:3px">Total Price</b>
+                        <p id="TotalPrice"></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                <button class="m-1 btn-primary btn" onclick="addToCart()" style="color:white">
+                    Increase Quantity
+                </button>
+
+                <button class="m-1 btn-danger btn" onclick="decreaseQuantity()">
+                    Decrease Quantity
+                </button>
+                <button class="m-1 btn-black btn" data-bs-dismiss="modal" onclick="deleteFromTheCart()">
+                    Remove From Cart
+                </button>
+                @*<button type="button" class="btn btn-primary">Done</button>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+    @if (Model == null)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="no-data flex-column" style="padding-top:40px;">
+                <div class="no-data-animation"></div>
+                <div id="No-Data-Error" class=" container text-center" style="
+											display:flex;align-items:center;justify-content:center;color:white;
+											transition:all 0.9s; margin-top:40px;margin-bottom:40px">
+                    We Dont Have Any Thing To Sell Sorry..
+                </div>
+            </div>
+
+        </div>
+    }
+    else if (Model.AvailableProducts.Count() == 0)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="no-data flex-column" style="padding-top:40px;">
+                <div class="no-data-animation"></div>
+                <div id="No-Data-Error" class=" container text-center" style="
+											display:flex;align-items:center;justify-content:center;color:white;
+											transition:all 0.9s; margin-top:40px;margin-bottom:40px">
+                    We Dont Have Any Thing To Sell Sorry..
+                </div>
+            </div>
+
+        </div>
+    }
+    else
+    {
+
+
+        <div class="untree_co-section" style="padding:30px !important">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                    </div>
+                    <div class="col-lg-12">
+
+                        <form method="get" asp-action="GetByName" asp-controller="Product" id="form-search">
+
+                            <div class="searchbar" id="search-bar">
+                                <div class="searchbar-wrapper">
+                                    <div class="searchbar-left">
+                                        <div class="search-icon-wrapper">
+                                            <span class="search-icon searchbar-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="searchbar-center">
+                                        <div class="searchbar-input-spacer"></div>
+                                        <label class="d-none" for="name"></label>
+                                        <input id="search-input" type="text" class="searchbar-input" maxlength="2048" name="name" autocapitalize="off"
+                                           autocomplete="off" title="Search" role="combobox" placeholder="Search For Product">
+                                    </div>
+
+                                    <div class="searchbar-right d-flex flex-column justify-content-center" onclick="submitForm()">
+                                        <svg viewBox="0 0 24 24" class="style-scope hoverable yt-icon"
+                                         style="cursor:pointer; display: block; width: 30px; height: 30px; transform: scale(-1, 1);">
+                                            <g mirror-in-rtl="" class="style-scope yt-icon"><path d="M21,11v1H5.64l6.72,6.72l-0.71,0.71L3.72,11.5l7.92-7.92l0.71,0.71L5.64,11H21z" class="style-scope yt-icon"></path></g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            @foreach (var item in Model.AvailableProducts)
+                            {
+                                <div class="col-sm-12 col-md-6 mb-4 col-lg-4" style="border-radius:10px;min-height:100% !important;transform:scale(85%);  box-shadow: 0px 1px 1px 4px #ebe7e7; padding:10px;">
+                                    <div class="product-item   d-flex flex-column justify-content-between" style="min-height:100% !important;">
+                                        <a onclick="showInfo(@item.Id)" class="product-img">
+                                            <span class="custom-badge sale" style="font-size:20px">Price @item.Price$</span>
+                                            <img style="cursor:pointer" src="@item.Image" alt="Image" class="img-fluid" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        </a>
+
+
+                                        <h1 class="bg-black m-1" style="color:white">@item.Name</h1>
+                                        @*<div class="d-flex flex-column justify-content-evenly">
+                                <button class="m-1 btn-primary btn" onclick="addToCart(@Model.Customer.Id,@item.Id)" style="color:white">
+                                Add To Cart
+                                </button>
+
+                                <button class="m-1 btn-black btn" onclick="decreaseQuantity(@Model.Customer.Id,@item.Id)">
+                                Decrease Quantity
+                                </button>
+                                <button class="m-1 btn-danger btn"  onclick="deleteFromTheCart(@Model.Customer.Id,@item.Id)">
+                                Remove From Cart
+                                </button>
+                                </div>*@
+                                    </div>
+                                </div>
+
+                            }
+
+
+                        </div>
+                        @*<div class="row mt-5">
+                            <div class="col-lg-12">
+                                <div class="custom-pagination">
+                                    <div class="row">
+                                        <ul class="list-unstyled" style="display:flex!important;justify-content:center!important">
+
+                                            <li class="m-1">
+                                                <a href="#">
+
+                                                    <svg style="transform:translateY(92%)scale(150%) !important" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"></path>
+                                                        <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                                    </svg>
+
+                                                </a>
+                                            </li>
+                                            <li class="m-1 active-page"><a href="#">1</a></li>
+
+                                            <li class="m-1"><a href="#">2</a></li>
+                                            <li class="m-1"><a href="#">3</a></li>
+                                            <li class="m-1"><a href="#">4</a></li>
+                                            <li class="m-1"><a href="#">5</a></li>
+                                            <li class="m-1">
+                                                <a href="#">
+
+
+
+                                                    <svg style="transform:translateY(92%)scale(150%) !important" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"></path>
+                                                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"></path>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+@section Scripts {
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous"></script>
+    <script src="~/LayoutAssets/js/aos.js"></script>
+    <script src="~/LayoutAssets/js/jq.js"></script>
+    <script src="~/LayoutAssets/js/jquery.sticky.js"> </script>
+    <script src="~/LayoutAssets/js/custom.js"></script>
+    <script src="~/LogicalJavaScript/SelectProduct.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+   
+    @if (Model.AvailableProducts.Count != 0)
+    {
+
+        <script>
+
+            var customerId = @Model.Customer.Id
+            var productId = @Model.AvailableProducts.First().Id
+
+                function submitEdit(number) {
+                    let formId = "#edit-" + number;
+                    console.log(formId)
+                    $(formId).submit()
+                }
+            function submitDelete(number) {
+                let formId = "#del-" + number;
+                console.log(formId)
+                $(formId).submit()
+            }
+
+            var SupplierDTOList = @Html.Raw(Json.Serialize(Model));
+            console.log(SupplierDTOList);
+
+
+            $('.actions-msg').click(() => {
+                $('#note-msg').fadeOut()
+            })
+
+
+
+            function submitForm() {
+                let searchValue = $('#search-input').val();
+                if (searchValue == '') { }
+                else {
+                    $('#form-search').submit()
+                }
+            }
+
+
+
+
+
+
+        </script>
+    }
+
+    <script>
+
+
+
+        var Model = @Html.Raw(Json.Serialize(Model));
+        var productDTOList = Model['availableProducts'];
+        console.log(productDTOList);
+
+
+
+
+
+
+
+
+
+        function showInfo(clickedId) {
+
+            productId = clickedId
+
+            let productDTO;
+
+            for (var i = 0; i < productDTOList.length; i++) {
+                productDTO = productDTOList[i];
+
+
+                if (parseInt(productDTO.id) == parseInt(clickedId)) {
+                    console.log("the product is");
+                    console.log(productDTO);
+                    break;
+                }
+
+            }
+
+            let specification = productDTO.description;
+            console.log(specification)
+
+            $('#productSpecification').html(specification);
+
+
+            let name = productDTO.name;
+            console.log(name)
+
+            $('#productName').html(name);
+
+
+            let productQuantity = productDTO.quantity;
+            console.log(productQuantity)
+
+            $('#productQuantity').html(productQuantity);
+
+
+
+            let productPrice = productDTO.price;
+            console.log(productPrice)
+
+            $('#productPrice').html(productPrice);
+
+
+
+            $('#selectedQuantity').val(GetQuantity(@Model.Customer.Id, clickedId))
+
+
+            let TotalPrice = productDTO.price;
+            console.log(TotalPrice)
+            let selectedQuantity = GetQuantity(@Model.Customer.Id, clickedId)
+
+            console.log("selectedQuantity = ", selectedQuantity)
+
+
+
+
+
+
+
+            let Tprice = parseInt(TotalPrice) * parseInt(selectedQuantity)
+            console.log(Tprice)
+            $('#TotalPrice').html(Tprice);
+
+
+
+
+            var imageElement = document.querySelector('#img-src-edit');
+
+
+            imageElement.setAttribute('src', productDTO.image);
+        }
+
+
+
+
+        function GetQuantity(customerId, productId) {
+            const storageData = localStorage.getItem(customerId);
+
+            localKey = customerId
+            if (storageData) {
+
+                const customerData = JSON.parse(storageData);
+
+
+                const dataArray = Array.isArray(customerData) ? customerData : [customerData];
+
+
+                const existingProduct = dataArray.find(item => item.productId === productId);
+
+                if (existingProduct) {
+
+                    return existingProduct.quantity
+                } else {
+
+                    return 0
+                }
+
+            } else {
+
+                return 0
+
+            }
+        }
+
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('#imageInput').change(function (event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (event) {
+                    $('#selectedImage').attr('src', event.target.result);
+                    $('#imageModal').modal('show');
+                };
+
+                // Read the file as a data URL
+                reader.readAsDataURL(file);
+            });
+
+            // When the modal dialog is closed
+            $('#imageModal').on('hidden.bs.modal', function (event) {
+                $('#selectedImage').attr('src', '');
+            });
+
+
+        });
+        $('#product').addClass('active');
+
+
+
+
+
+        function submitServe(number) {
+            let formId = "#serve-" + number;
+            console.log(formId)
+            $(formId).submit()
+        }
+
+    </script>
+
+
+    <script>
+        $('#selectedQuantity').on("change", () => {
+
+            if (parseInt($('#selectedQuantity').val()) < 0) {
+                $('#selectedQuantity').val(0)
+            }
+            else if (parseInt($('#selectedQuantity').val()) > parseInt($('#productQuantity').html())) {
+
+                //swal({
+                //    title: "Sorry Dear User",
+                //    text: "We Have Only " + $('#productQuantity').html() + " Unit Of The Product " + $('#productName').html(),
+                //    icon: "warning",
+                //    button: "UMMM",
+                //})
+
+
+
+
+                const storageData = localStorage.getItem(customerId);
+
+                localKey = customerId
+                if (storageData) {
+
+                    const customerData = JSON.parse(storageData);
+
+
+                    const dataArray = Array.isArray(customerData) ? customerData : [customerData];
+
+
+                    const existingProduct = dataArray.find(item => item.productId === productId);
+
+                    if (existingProduct) {
+
+                        let productDTO;
+
+                        for (var i = 0; i < productDTOList.length; i++) {
+                            productDTO = productDTOList[i];
+
+
+                            if (parseInt(productDTO.id) == parseInt(productId)) {
+                                console.log("the product is in Add");
+                                console.log(productDTO);
+                                break;
+                            }
+
+                        }
+                        existingProduct.quantity = productDTO.quantity
+
+                    } else {
+                        dataArray.push({
+                            productId,
+                            quantity: 1
+                        });
+                    }
+                    localStorage.setItem(customerId, JSON.stringify(dataArray));
+
+                } else {
+
+                    const newData = [{
+                        productId,
+                        quantity: 1
+                    }];
+
+                    localStorage.setItem(customerId, JSON.stringify(newData));
+                }
+                console.log(localStorage.getItem(customerId))
+
+                //$('#selectedQuantity').val(0)
+
+            } else {
+                const storageData = localStorage.getItem(customerId);
+
+                localKey = customerId
+                if (storageData) {
+
+                    const customerData = JSON.parse(storageData);
+
+
+                    const dataArray = Array.isArray(customerData) ? customerData : [customerData];
+
+
+                    const existingProduct = dataArray.find(item => item.productId === productId);
+
+                    if (existingProduct) {
+
+
+                        existingProduct.quantity = parseInt($('#selectedQuantity').val())
+
+                    } else {
+                        dataArray.push({
+                            productId,
+                            quantity: 1
+                        });
+                    }
+                    localStorage.setItem(customerId, JSON.stringify(dataArray));
+                } else {
+                    const newData = [{
+                        productId,
+                        quantity: 1
+                    }];
+
+                    localStorage.setItem(customerId, JSON.stringify(newData));
+                }
+                console.log(localStorage.getItem(customerId))
+            }
+            showInfo(productId)
+        })
+    </script>
+	}

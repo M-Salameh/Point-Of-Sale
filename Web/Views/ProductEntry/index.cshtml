@@ -1,0 +1,393 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Products-Page";
+}
+@model List<ApplicationLayer.DTOs.EntryItemsDTO>
+
+<link rel="stylesheet" href="~/Product/search.css">
+<link rel="stylesheet" href="~/css/Supplier/NotificationMsg.css">
+<link rel="stylesheet" href="~/css/NoDataFound.css">
+<link rel="stylesheet" href="~/css/TableAndStuff.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/animate.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/aos.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/style.css">
+
+
+
+<div class="page-heading bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7" style="padding-top:20px">
+                <h1>Products Entry Infomation</h1>
+                <p class="mb-4"><a href="#">Products</a> / <strong>Inventory, Entry With Code Number @Model.First().Id</strong></p>
+             
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    @if (Model.Count == 0 || Model == null)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="no-data flex-column" style="padding-top:40px;">
+                <div class="no-data-animation"></div>
+                <div id="No-Data-Error" class=" container text-center" style="
+                                            display:flex;align-items:center;justify-content:center;color:white;
+                                            transition:all 0.9s; margin-top:40px;margin-bottom:40px">
+                There are No Results Sorry...
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+
+
+      
+
+
+        <div class="container">
+
+            <div class="row mb-5">
+                <div class="site-blocks-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="product-name">Product Name</th>
+                                <th class="product-price">Buying Price</th>
+                                <th class="product-quantity">Quantity</th>
+                                <th class="product-quantity">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                   
+                                    <td class="product-name">
+                                        <h2 class="h5 text-black">@item.Product.Name</h2>
+                                    </td>
+                                    <td>$@item.Price</td>
+                                    <td>
+                                        @if (@item.Quantity > 0)
+                                        {
+                                            <span>@item.Quantity</span>
+                                        }
+                                        else
+                                        {
+                                            <span>0</span>
+                                        }
+                                    </td>
+                                    <td>$@item.CreatedAt</td>                                  
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+@{
+    if (TempData["Success"] != null)
+    {
+        if (TempData["Success"].ToString() == "True")
+        {
+            <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid" id="note-msg">
+                <div class="header-msg">
+                    <span class="icon-msg">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <p class="alert-msg">Server Responds !!!!</p>
+                </div>
+
+                <p class="message-for-notify">
+                    @TempData["Message"]
+                </p>
+
+                <div class="actions-msg" style="cursor:pointer;">
+                    <a class="read-msg">
+                        Got it
+                    </a>
+
+                </div>
+            </div>
+
+        }
+        else if (TempData["Success"].ToString() == "False")
+        {
+            <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid" id="note-msg">
+                <div class="header-msg">
+                    <span class="icon-msg">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <p class="alert-msg">Server Responds !!!!</p>
+                </div>
+
+                <p class="message-for-notify">
+                    @TempData["Message"]
+                </p>
+
+                <div class="actions-msg" style="cursor:pointer;">
+                    <a class="read-msg">
+                        Got it
+                    </a>
+
+                </div>
+            </div>
+
+        }
+    }
+}
+
+@{
+    if (TempData["deleted"] != null)
+    {
+        if (TempData["deleted"].ToString() == "True")
+        {
+            <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid " id="note-msg">
+                <div class="header-msg">
+                    <span class="icon-msg">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <p class="alert-msg">Server Responds !!!!</p>
+                </div>
+
+                <p class="message-for-notify">
+                    @TempData["Message"]
+                </p>
+
+                <div class="actions-msg" style="cursor:pointer;">
+                    <a class="read-msg">
+                        Got it
+                    </a>
+
+                </div>
+            </div>
+
+        }
+        else if (TempData["deleted"].ToString() == "False")
+        {
+            <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid" id="note-msg">
+                <div class="header-msg">
+                    <span class="icon-msg">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <p class="alert-msg">Server Responds !!!!</p>
+                </div>
+
+                <p class="message-for-notify">
+                    @TempData["Message"]
+                </p>
+
+                <div class="actions-msg" style="cursor:pointer;">
+                    <a class="read-msg">
+                        Got it
+                    </a>
+
+                </div>
+            </div>
+
+        }
+    }
+}
+
+
+
+@section Scripts {
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous"></script>
+    <script src="~/LayoutAssets/js/aos.js"></script>
+    <script src="~/LayoutAssets/js/jq.js"></script>
+    <script src="~/LayoutAssets/js/jquery.sticky.js"> </script>
+    <script src="~/LayoutAssets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+    <script>
+        function submitEdit(number) {
+            let formId = "#edit-" + number;
+            console.log(formId)
+            $(formId).submit()
+        }
+        function submitDelete(number) {
+            let formId = "#del-" + number;
+            console.log(formId)
+            $(formId).submit()
+        }
+        // get the model into JS
+        var SupplierDTOList = @Html.Raw(Json.Serialize(Model));
+        console.log(SupplierDTOList);
+
+
+        $('.actions-msg').click(() => {
+            $('#note-msg').fadeOut()
+        })
+
+
+
+        function submitForm() {
+            let searchValue = $('#search-input').val();
+            if (searchValue == '') { }
+            else {
+                $('#form-search').submit()
+            }
+        }
+
+
+
+
+    </script>
+
+
+    @*Validation*@
+    <script>
+        var inputForQuantity = document.getElementById("productQuantity");
+
+        inputForQuantity.addEventListener("change", function () {
+            var value = parseInt(inputForQuantity.value);
+            if (value < 0) {
+                inputForQuantity.value = 1;
+            }
+        });
+
+
+        var inputForPrice = document.getElementById("productPrice");
+
+        inputForPrice.addEventListener("change", function () {
+            var value = parseInt(inputForPrice.value);
+            if (value < 0) {
+                inputForPrice.value = 0.01;
+            }
+        });
+    </script>
+
+    <script>
+
+
+
+        var productDTOList = @Html.Raw(Json.Serialize(Model));
+        console.log(productDTOList);
+
+
+        function edit(id) {
+
+            for (var i = 0; i < productDTOList.length; i++) {
+                productDTO = productDTOList[i];
+
+                // Check if the current object has a Name property equal to "dsds"
+                if (parseInt(productDTO.id) == parseInt(id)) {
+                    console.log("the product is");
+                    console.log(productDTO);
+
+                    console.log(productDTO.name)
+                    $('#productName').val(productDTO.name)
+
+
+
+                    $('#productQuantity').val(productDTO.quantity)
+                    console.log(productDTO.quantity)
+
+                    $('#productPrice').val(productDTO.price)
+                    console.log(productDTO.price)
+
+                    $('#productDescription').val(productDTO.description)
+                    console.log(productDTO.description)
+
+                    break; // Exit the loop once the element is found
+                }
+
+            }
+
+
+        }
+
+
+        function showInfo(clickedId) {
+
+
+            let productDTO;
+
+            for (var i = 0; i < productDTOList.length; i++) {
+                productDTO = productDTOList[i];
+
+                
+                if (parseInt(productDTO.id) == parseInt(clickedId)) {
+                    console.log("the product is");
+                    console.log(productDTO);
+                    break; 
+                }
+
+            }
+            
+            let specification = productDTO.description;
+            console.log(specification)
+            
+            $('#productSpecification').html(specification);
+
+
+
+            var imageElement = document.querySelector('#img-src-edit');
+
+
+            imageElement.setAttribute('src', productDTO.image);
+
+        }
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('#imageInput').change(function (event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (event) {
+                    $('#selectedImage').attr('src', event.target.result);
+                    $('#imageModal').modal('show');
+                };
+
+                // Read the file as a data URL
+                reader.readAsDataURL(file);
+            });
+
+            // When the modal dialog is closed
+            $('#imageModal').on('hidden.bs.modal', function (event) {
+                $('#selectedImage').attr('src', '');
+            });
+
+
+        });
+    </script>
+    
+    
+    <script>
+
+        $('#product').addClass('active');
+    </script>
+
+
+
+}

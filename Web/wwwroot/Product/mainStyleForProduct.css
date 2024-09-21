@@ -1,0 +1,57 @@
+﻿
+
+
+.price-good {
+    margin-top: 25px;
+    margin-left: 20px;
+    font-family: Calibris
+}
+
+
+.price-label-good {
+    /*border: 2px #337ab7 solid;*/
+    padding: 2px;
+    border-radius: 12%;
+    /*background-color: #337ab7;*/
+    color: #337ab7;
+}
+
+
+.card {
+    border-radius: 20px;
+    box-shadow: #7eadd5 0px 1px 10px 1px, #5b88af 0px 0px 0px 1px;
+    margin-bottom: 10px
+}
+
+.card:hover {
+    transition: all 0.5s;
+    transform: scale(110%);
+}
+
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+    .social-link:hover, .social-link:focus {
+        background: #ddd;
+        text-decoration: none;
+        color: #555;
+    }
+
+.spacer {
+    display: block;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    border: 1px solid #337ab7;
+    height: 1px
+}

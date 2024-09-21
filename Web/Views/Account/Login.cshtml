@@ -1,0 +1,72 @@
+﻿@model LoginViewModel
+@{  
+    ViewData["Title"] = "Login";  
+    Layout = "~/Views/Shared/_Layout.cshtml";  
+}  
+<div class="page-heading bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <h1>Login</h1>
+                <p class="mb-4"><a>HR</a> / <strong>Login</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">  
+    <form asp-action="Login" asp-controller="Account" method="post">  
+        <div class="">  
+           
+            <div class="col-6 mb-3">
+                <label class="form-label" asp-for="Email"></label>
+                <input id="name-no-number" type="email" asp-for="Email" class="form-control" placeholder="Email">
+            </div>
+
+            <span asp-validation-for="Email" class="text-danger"
+                  style="font-family:Open Sans;
+                                    padding-top:5px;padding-bottom:15px;transition:all 1s;"></span>
+
+
+            <div class="col-6 mb-3">
+                <label class="form-label" asp-for="Password"></label>
+                <input id="name-no-number" type="password" asp-for="Password" class="form-control" placeholder="Password">
+            </div>
+
+            <span asp-validation-for="Password" class="text-danger"
+                  style="font-family:Open Sans;
+                                    padding-top:5px;padding-bottom:15px;transition:all 1s;"></span>
+
+
+            <div class="form-group">
+                <div class="col-sm-12 btn-submit">  
+                    <input type="submit" class="btn btn-success" value="Login">
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+            <div class="mt-3">
+                <a asp-action="Register" asp-controller="Account">Don't have an account? Click to Register</a>
+            </div>
+        </div>
+
+    </form>  
+</div>  
+
+
+
+@section Scripts{
+    <script src="~/JQuery/JQ.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
+    <script src="~/LayoutAssets/js/aos.js"></script>
+    <script src="~/LayoutAssets/js/jq.js"></script>
+    <script src="~/LayoutAssets/js/jquery.sticky.js"> </script>
+    <script src="~/LayoutAssets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+}

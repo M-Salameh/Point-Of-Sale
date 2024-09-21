@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "E SHOP";
+    ViewData["image"] = "https://localhost:44355/images/truck.jpg";
+    Layout = "_Layout";
+
+}
+<link rel="stylesheet" href="~/LayoutAssets/css/animate.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/style.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/layoutStuff.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/cards.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/eye.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/typer.css">
+
+<div class="untree_co-hero" style="background-image: url('@ViewData["image"]');">
+    <div class="container">
+        <div class="row align-items-center justify-content-end">
+            <div class="col-lg-5 text-center text-lg-center">
+
+                <p style="cursor:pointer;transform:scale(150%);" class="mb-0" data-aos="fade-up" data-aos-delay="300">
+                    <a asp-action="Add" class=" form-control btn btn-black">Add Supplier Information</a>
+                </p>
+                <form id="form-search" method="post" asp-action="GetSupplierByName" asp-controller="InventoryManagement">
+                    <p style="cursor:pointer;transform:scale(150%); margin-top:80px" class="mb-0" data-aos="fade-up" data-aos-delay="300">
+                        <label class="d-none" for="name"></label>
+                        <input autocomplete="off" id="search" name="name" class="form-control btn btn-black" placeholder="Search For The Supplier">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    #search::placeholder {
+        color: white;
+    }
+</style>
+
+
+@section Scripts{
+    <script src="~/JQuery/JQ.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous"></script>
+    <script src="~/LayoutAssets/js/aos.js"></script>
+    <script src="~/LayoutAssets/js/jquery.sticky.js"> </script>
+    <script src="~/LayoutAssets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+
+    <script>
+        $('#form-search').submit(function (event) {
+
+            let searchValue = $('#search').val();
+            if (searchValue == '') {
+                event.preventDefault();
+            }
+            else {
+                validForm = true;
+                $('#form-search').submit()
+            }
+        });
+
+    </script>
+
+}

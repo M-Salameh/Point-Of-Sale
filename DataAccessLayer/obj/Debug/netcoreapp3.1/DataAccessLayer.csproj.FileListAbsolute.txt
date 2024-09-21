@@ -1,0 +1,88 @@
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\mohamad\Documents\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache

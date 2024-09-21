@@ -1,0 +1,110 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model ApplicationLayer.DTOs.CustomerDTO
+<div class="page-heading bg-light">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7">
+                <h1>Edit The Information Of The Customer @Model.Name</h1>
+                <p class="mb-4"><a>Customers</a> / <strong>Add</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="untree_co-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-7 mr-auto order-1" data-aos="fade-up" data-aos-delay="200">
+                <form method="post" action="@Url.Action("Update", "Customer")">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+
+                            <div class="d-none">
+                                <input type="number" asp-for="Id" class="d-none" placeholder="">
+                            </div>
+                            <input type="text" asp-for="Name" class="form-control"
+                                   placeholder="Customer Name">
+
+                            <span asp-validation-for="Name" class="text-danger"
+                                  style="font-family:Open Sans;
+                                    padding-top:5px;padding-bottom:15px;transition:all 1s;"></span>
+
+
+                        </div>
+
+
+                        <div class="col-6 mb-3">
+                            <input type="text" asp-for="Address" class="form-control"
+                                   placeholder="Address">
+
+                            <span asp-validation-for="Address" class="text-danger"
+                                  style="font-family:Open Sans;
+                                    padding-top:5px;padding-bottom:15px;transition:all 1s;"></span>
+
+
+                        </div>
+
+
+
+                        <div class="col-12 mb-3">
+                            <input type="email" asp-for="EmailAddress" class="form-control"
+                                   placeholder="Email Address">
+
+                            <span asp-validation-for="EmailAddress" class="text-danger"
+                                  style="font-family:Open Sans;
+                                    padding-top:5px;padding-bottom:15px;transition:all 1s;"></span>
+
+
+
+                        </div>
+
+
+
+                        <div class="col-12 mb-3">
+                            <input type="number" asp-for="PhoneNumber" class="form-control"
+                                   placeholder="PhoneNumber">
+                            <span asp-validation-for="PhoneNumber" class="text-danger"
+                                  style="font-family:Open Sans;
+                                    padding-top:5px;padding-bottom:15px;transition:all 1s;"></span>
+
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" value="Edit Customer" class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script src="~/JQuery/JQ.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#name-no-number').on('input', () => {
+                setTimeout(() => {
+                    let items = $('#name-no-number').val();
+                    var newValue = items.replace(/\d+/g, '');
+                    $('#name-no-number').val(newValue);
+                }, 1000)
+            });
+
+            $('#no-negative').on('input', () => {
+                setTimeout(() => {
+                    let value = $('#no-negative').val();
+                    if (value <= 0) {
+                        $('#no-negative').val(1);
+                    }
+                }, 1000)
+            });
+        });
+    </script>
+}

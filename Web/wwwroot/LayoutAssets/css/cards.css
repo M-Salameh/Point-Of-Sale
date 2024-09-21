@@ -1,0 +1,122 @@
+.boxes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.good-card {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.good-card-link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+}
+
+.good-card-link:hover,
+.good-card-link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.good-card-link:hover .backgrounder {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.good-card a {
+    text-decoration: none;
+}
+
+.good-card-title {
+    text-decoration: none !important;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date-box {
+    font-size: 15px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+}
+
+.backgrounder {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.good-card1 .backgrounder {
+    background-color: #3ecd5e;
+}
+
+.good-card2 .backgrounder {
+    background-color: #e44002;
+}
+
+.good-card3 .backgrounder {
+    background-color: #952aff;
+}
+
+.good-card4 .backgrounder {
+    background-color: #cd3e94;
+}
+
+.good-card5 .backgrounder {
+    background-color: #4c49ea;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .ag-format-container {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .good-card {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .good-card-link {
+        padding: 22px 40px;
+    }
+    .ag-courses-item_date-box {
+        font-size: 16px;
+    }
+}

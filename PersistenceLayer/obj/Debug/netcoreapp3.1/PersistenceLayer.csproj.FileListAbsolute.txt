@@ -1,0 +1,112 @@
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\mohamad\Documents\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\mohamad\Desktop\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.runtimeconfig.dev.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.csproj.CopyComplete
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\PersistenceLayer\obj\Debug\netcoreapp3.1\PersistenceLayer.genruntimeconfig.cache

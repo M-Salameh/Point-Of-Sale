@@ -1,0 +1,532 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Products-Page";
+    ViewData["Logo"] = "Products";
+    ViewData["Controller"] = "Product";
+    ViewData["Action"] = "Index";
+
+
+}
+@model List<ApplicationLayer.DTOs.CustomerDTO>
+
+<link rel="stylesheet" href="~/Product/search.css">
+<link rel="stylesheet" href="~/css/Supplier/NotificationMsg.css">
+<link rel="stylesheet" href="~/css/NoDataFound.css">
+<link rel="stylesheet" href="~/css/TableAndStuff.css">
+
+
+<link rel="stylesheet" href="~/LayoutAssets/css/animate.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/aos.css">
+<link rel="stylesheet" href="~/LayoutAssets/css/style.css">
+
+
+
+<div class="page-heading bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7" style="padding-top:20px">
+                <h1>Add Order For Customer</h1>
+                <p class="mb-4"><a href="">Customers</a> / <strong>Results Match The Name '@ViewData["search Query"]'</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    @if (Model.Count == 0 || Model == null)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="no-data flex-column" style="padding-top:40px;">
+                <div class="no-data-animation"></div>
+                <div id="No-Data-Error" class=" container text-center" style="
+                                            display:flex;align-items:center;justify-content:center;color:white;
+                                            transition:all 0.9s; margin-top:40px;margin-bottom:40px">
+                </div>
+            </div>
+
+        </div>
+    }
+    else
+    {
+
+        
+        <div class="container">
+
+            <div class="row mb-5">
+                <div class="site-blocks-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="product-price">Name</th>
+                                <th class="product-thumbnail">Email Address</th>
+                                <th class="product-name">Phone Number</th>
+                                <th class="product-quantity">Address</th>
+                                <th class="product-remove">Buy Some Products</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @item.Name
+                                    </td>
+                                    <td>
+                                        @item.EmailAddress
+                                    </td>
+                                    <td>
+                                        @item.PhoneNumber
+                                    </td>
+                                    <td>
+                                        @item.Address
+                                    </td>
+
+                                    <td>
+                                        <form id="serve-@item.Id" style="margin-right:10px;" method="post" action="@Url.Action("StartServing", "PointOfSale")">
+                                            <label class="d-none" for="id">ID:</label>
+                                            <input type="number" name="id" class="d-none" value="@item.Id" />
+                                        </form>
+                                        <a style="text-decoration:underline;cursor:pointer;" onclick="submitServe(@item.Id)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 48 48" version="1.1" fill="#000000">
+
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                                <g id="SVGRepo_iconCarrier"> <title>click</title> <desc>Created with Sketch.</desc> <g id="click" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"> <rect width="48" height="48" fill="white" fill-opacity="0.01" /> <g id="编组" transform="translate(8.000000, 5.000000)" stroke="#000000" stroke-width="4"> <g id="分组" transform="translate(7.000000, 7.000000)" stroke-linejoin="round"> <path d="M0,14 L0,3 C0,1.34314575 1.34314575,0 3,0 C4.65685425,0 6,1.34314575 6,3 L6,14" id="Rectangle-2"> </path> <path d="M24,13 L24,19.5 C24,25.8512746 18.8512746,31 12.5,31 L11.5,31 C5.14872538,31 0,25.8512746 0,19.5 L0,13" id="Rectangle-4"> </path> <path d="M6,17 L6,15.1057529 L6,12 C6,10.3431458 7.34314575,9 9,9 C10.6568542,9 12,10.3431458 12,12 L12,15.1818037 L12,17" id="Rectangle-3"> </path> <path d="M12,17 L12,15.1057529 L12,12 C12,10.3431458 13.3431458,9 15,9 C16.6568542,9 18,10.3431458 18,12 L18,15.1818037 L18,17" id="Rectangle-3-Copy"> </path> <path d="M18,17 L18,15.1057529 L18,12 C18,10.3431458 19.3431458,9 21,9 C22.6568542,9 24,10.3431458 24,12 L24,15.1818037 L24,17" id="Rectangle-3-Copy-2"> </path> </g> <path d="M20,10 C20,8.94888684 19.8378284,7.93565088 19.5371411,6.98394793 C19.2008409,5.91952713 18.6912709,4.93207821 18.0415268,4.05469702 C16.2197921,1.59471942 13.2961294,0 10,0 C6.70387063,0 3.78020794,1.59471942 1.95847316,4.05469702 C1.30872911,4.93207821 0.799159071,5.91952713 0.462858909,6.98394793 C0.162171574,7.93565088 0,8.94888684 0,10" id="路径"> </path> </g> </g> </g>
+
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+
+@{
+    if (TempData["Success"] != null)
+    {
+        if (TempData["Success"].ToString() == "True")
+        {
+    <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid ; transform:scale(80%);" id="note-msg">
+                                        <div class="header-msg">
+                                            <span class="icon-msg">
+                                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <p class="alert-msg">Server Responds !!!!</p>
+                                        </div>
+
+                                        <p class="message-for-notify">
+                                            The Supplier is added successfully, you can deal with him any time you want.
+                                        </p>
+
+                                        <div class="actions-msg" style="cursor:pointer;">
+                                            <a class="read-msg">
+                                                Got it
+                                            </a>
+
+                                        </div>
+    </div>
+
+        }
+        else if (TempData["Success"].ToString() == "False")
+        {
+    <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid ;transform:scale(80%)" id="note-msg">
+                                        <div class="header-msg">
+                                            <span class="icon-msg">
+                                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <p class="alert-msg">Server Responds !!!!</p>
+                                        </div>
+
+                                        <p class="message-for-notify">
+                                            There was some problems in adding the supplier to the DB Sorry.
+                                        </p>
+
+                                        <div class="actions-msg" style="cursor:pointer;">
+                                            <a class="read-msg">
+                                                Got it
+                                            </a>
+
+                                        </div>
+    </div>
+
+        }
+    }
+}
+
+@{
+    if (TempData["deleted"] != null)
+    {
+        if (TempData["deleted"].ToString() == "True")
+        {
+    <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid ;transform:scale(80%)" id="note-msg">
+                                        <div class="header-msg">
+                                            <span class="icon-msg">
+                                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <p class="alert-msg">Server Responds !!!!</p>
+                                        </div>
+
+                                        <p class="message-for-notify">
+                                            The Supplier is deleted successfully, you can't deal with him any more.
+                                        </p>
+
+                                        <div class="actions-msg" style="cursor:pointer;">
+                                            <a class="read-msg">
+                                                Got it
+                                            </a>
+
+                                        </div>
+    </div>
+
+        }
+        else if (TempData["deleted"].ToString() == "False")
+        {
+    <div class="card-msg" style="position:fixed;right:2%;bottom:2%; border: 2px #eaeaea  solid ;transform:scale(80%)" id="note-msg">
+                                        <div class="header-msg">
+                                            <span class="icon-msg">
+                                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <p class="alert-msg">Server Responds !!!!</p>
+                                        </div>
+
+                                        <p class="message-for-notify">
+                                            There was some problems in deleting the supplier from the DB Sorry.
+                                        </p>
+
+                                        <div class="actions-msg" style="cursor:pointer;">
+                                            <a class="read-msg">
+                                                Got it
+                                            </a>
+
+                                        </div>
+    </div>
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+<!-- Edit Product Modal -->
+<div class="modal fade" id="editProductModal" tabindex="-2" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProductModalLabel" style="font-size:20px">Edit Product Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="productName" class="form-label" style="font-size:15px;">Product Name</label>
+                        <input type="text" class="form-control"
+                               id="productName" style="padding-left:10px !important;" placeholder="Enter product name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label" style="font-size:15px">Product Description</label>
+                        <textarea class="form-control" id="productDescription" style="padding-left:10px!important;"
+                                  rows="3" placeholder="Enter product description"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productPrice" class="form-label" style="font-size:15px">Product Price</label>
+                        <input type="number" class="form-control" id="productPrice"
+                               style="padding-left:10px !important;" placeholder="Enter product price">
+                    </div>
+                    <div class="mb-3">
+                        <label for="productQuantity" class="form-label" style="font-size:15px">Product Quantity</label>
+                        <input type="number" class="form-control" style="padding-left:10px !important;" id="productQuantity" placeholder="Enter product quantity">
+                    </div>
+
+
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="imageInput">
+                    </div>
+
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Selected Image</h5>
+                                    <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img id="selectedImage" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Info modal -->
+<div class="modal fade" id="showInfomation" tabindex="-1"
+     aria-labelledby="showInfomationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="showInfomationLabel">Product Information</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center align-content-between" style="height:300px">
+                    <div class="col-md-6">
+                        <img src="" class="circle" id="img-src-edit" alt="Product Image" width="200">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p id="productSpecification"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous"></script>
+    <script src="~/LayoutAssets/js/aos.js"></script>
+    <script src="~/LayoutAssets/js/jq.js"></script>
+    <script src="~/LayoutAssets/js/jquery.sticky.js"> </script>
+    <script src="~/LayoutAssets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+    <script>
+
+
+
+        function submitServe(number) {
+            let formId = "#serve-" + number;
+            console.log(formId)
+            $(formId).submit()
+        }
+
+
+
+
+
+        function submitEdit(number) {
+            let formId = "#edit-" + number;
+            console.log(formId)
+            $(formId).submit()
+        }
+        function submitDelete(number) {
+            let formId = "#del-" + number;
+            console.log(formId)
+            $(formId).submit()
+        }
+        // get the model into JS
+        var SupplierDTOList = @Html.Raw(Json.Serialize(Model));
+        console.log(SupplierDTOList);
+
+
+        $('.actions-msg').click(() => {
+            $('#note-msg').fadeOut()
+        })
+
+
+
+
+        function submitForm() {
+            let searchValue = $('#search-input').val();
+            if (searchValue == '') { }
+            else {
+                $('#form-search').submit()
+            }
+        }
+
+
+        // type a text string in the UI for the error.
+        function typeEffectForError() {
+            var effect = new Typed("#No-Data-Error", {
+                strings: ['', 'There are No Results Sorry....'],
+                loop: false,
+                typeSpeed: 70,
+                backSpeed: 10,
+                backDelay: 20,
+                cursorChar: ''
+            })
+        }
+        typeEffectForError()
+
+
+
+
+
+    </script>
+
+
+    @*Validation*@
+    <script>
+        var inputForQuantity = document.getElementById("productQuantity");
+
+        inputForQuantity.addEventListener("change", function () {
+            var value = parseInt(inputForQuantity.value);
+            if (value < 0) {
+                inputForQuantity.value = 1;
+            }
+        });
+        var inputForPrice = document.getElementById("productPrice");
+
+        inputForPrice.addEventListener("change", function () {
+            var value = parseInt(inputForPrice.value);
+            if (value < 0) {
+                inputForPrice.value = 0.01;
+            }
+        });
+    </script>
+
+    <script>
+
+
+
+        var productDTOList = @Html.Raw(Json.Serialize(Model));
+        console.log(productDTOList);
+
+
+        function edit(id) {
+
+            for (var i = 0; i < productDTOList.length; i++) {
+                productDTO = productDTOList[i];
+
+                // Check if the current object has a Name property equal to "dsds"
+                if (parseInt(productDTO.id) == parseInt(id)) {
+                    console.log("the product is");
+                    console.log(productDTO);
+
+                    console.log(productDTO.name)
+                    $('#productName').val(productDTO.name)
+
+
+
+                    $('#productQuantity').val(productDTO.quantity)
+                    console.log(productDTO.quantity)
+
+                    $('#productPrice').val(productDTO.price)
+                    console.log(productDTO.price)
+
+                    $('#productDescription').val(productDTO.description)
+                    console.log(productDTO.description)
+
+                    break; // Exit the loop once the element is found
+                }
+
+            }
+
+
+        }
+
+
+        function showInfo(clickedId) {
+
+
+            let productDTO;
+
+            for (var i = 0; i < productDTOList.length; i++) {
+                productDTO = productDTOList[i];
+
+
+                if (parseInt(productDTO.id) == parseInt(clickedId)) {
+                    console.log("the product is");
+                    console.log(productDTO);
+                    break;
+                }
+
+            }
+
+            let specification = productDTO.description;
+            console.log(specification)
+
+            $('#productSpecification').html(specification);
+
+
+
+            var imageElement = document.querySelector('#img-src-edit');
+
+
+            imageElement.setAttribute('src', productDTO.image);
+
+        }
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('#imageInput').change(function (event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (event) {
+                    $('#selectedImage').attr('src', event.target.result);
+                    $('#imageModal').modal('show');
+                };
+
+                // Read the file as a data URL
+                reader.readAsDataURL(file);
+            });
+
+            // When the modal dialog is closed
+            $('#imageModal').on('hidden.bs.modal', function (event) {
+                $('#selectedImage').attr('src', '');
+            });
+
+
+        });
+    </script>
+
+
+
+    <script>
+
+        $('#customer').addClass('active');
+    </script>
+
+
+}

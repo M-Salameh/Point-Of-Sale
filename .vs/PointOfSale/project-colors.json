@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "98d41a68-81a8-41d5-b858-aaa719f01ce5": {
+      "ProjectGuid": "98d41a68-81a8-41d5-b858-aaa719f01ce5",
+      "DisplayName": "PersistenceLayer",
+      "ColorIndex": 0
+    },
+    "dc37b866-b793-4a5b-959d-72fa25f4de57": {
+      "ProjectGuid": "dc37b866-b793-4a5b-959d-72fa25f4de57",
+      "DisplayName": "TestingLayer",
+      "ColorIndex": 1
+    },
+    "0f51b10c-38b7-4ba6-b44d-7c9d240366c8": {
+      "ProjectGuid": "0f51b10c-38b7-4ba6-b44d-7c9d240366c8",
+      "DisplayName": "ApplicationLayer",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "06f439a0-6f8c-4f83-85d0-e63b8509be1f": {
+      "ProjectGuid": "06f439a0-6f8c-4f83-85d0-e63b8509be1f",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 3
+    },
+    "489ed981-9e70-4b35-9679-24ebdb62e300": {
+      "ProjectGuid": "489ed981-9e70-4b35-9679-24ebdb62e300",
+      "DisplayName": "Web",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,42 @@
+.animated-circle {
+    z-index: -1111;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transform: translateX(-900px)scale(0%);
+    animation-fill-mode: both;
+}
+
+.num-one {
+    animation: movingCircle 5.4s ease 0.3s 10;
+}
+
+.num-two {
+    animation: movingCircle 5.4s ease 1s 10;
+}
+
+.num-three {
+    animation: movingCircle 5.4s ease 1.7s 10;
+}
+
+.num-four {
+    animation: movingCircle 5.4s ease 2.4s 10;
+}
+
+.num-five {
+    animation: movingCircle 5.4s ease 3.1s 10;
+}
+
+.num-six {
+    animation: movingCircle 5.4s ease 3.8s 10;
+}
+
+@keyframes movingCircle {
+    0% {
+        transform: translateX(-150px)scale(110%);
+    }
+    50% {
+        transform: translateX(1190px)scale(0%);
+    }
+}

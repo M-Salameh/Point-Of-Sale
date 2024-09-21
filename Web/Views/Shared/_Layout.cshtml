@@ -1,0 +1,273 @@
+﻿<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <!-- Links For Style Sheets-->
+    <!-- Link For Site Icon-->
+    <link rel="icon" type="image/x-icon" href="/images/R.png">
+    <title>@ViewBag.Title</title>
+
+
+</head>
+
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+
+
+    <style>
+
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+
+
+
+    <script>
+        var loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.innerHTML = '<div class="spinner"></div>';
+
+        document.body.appendChild(loader);
+
+        window.addEventListener('load', function () {
+            loader.style.display = 'none';
+        });
+
+    </script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Muli:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/LayoutAssets/css/animate.min.css">
+    <link rel="stylesheet" href="~/LayoutAssets/css/style.css">
+    <link rel="stylesheet" href="~/LayoutAssets/css/layoutStuff.css">
+    <link rel="stylesheet" href="~/LayoutAssets/css/cards.css">
+    <link rel="stylesheet" href="~/LayoutAssets/css/eye.css">
+    <link rel="stylesheet" href="~/LayoutAssets/css/typer.css">
+    <link rel="stylesheet" href="~/css/Loader.css">
+
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body">
+            <ul class="site-nav-wrap">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- Navigation Bar-->
+    <nav class="site-nav mb-5" style="position: fixed;margin-bottom:20px;">
+        <div id="sticky-wrapper" class="sticky-wrapper" style="height: 37.5909px;">
+            <div class="sticky-nav js-sticky-header">
+                <div class="container position-relative">
+                    <div class="site-navigation text-center dark">
+                        <a asp-controller="Home" asp-action="Index" class="logo menu-absolute m-0" style="text-decoration:none!important; font-size:20px;transform:translateY(-78%)">
+                            E-SHOP
+                        </a>
+                        <ul class="js-clone-nav pl-0 d-none d-lg-inline-block site-menu">
+                            <li id="home"><a asp-controller="Home" asp-action="index">Home</a></li>
+                            <li id="product"><a asp-controller="Product" asp-action="index">Products</a></li>
+                            <li id="supplier"><a asp-controller="Supplier" asp-action="index">Suppliers</a></li>
+                            <li id="customer"><a asp-controller="Customer" asp-action="index">Customers</a></li>
+                            <li id="profile"><a asp-controller="Account" asp-action="Profile">Profile</a></li>
+                            <li id="cart">
+                                <a asp-controller="PointOfSale" asp-action="Carts">
+                                    <svg width="22px" height="22px" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li id="notificationContainer">
+                                <a asp-controller="Notification" asp-action="index">
+                                    <div style="width:40px;height:40px">
+                                        <svg id="notification" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                             class="style-scope yt-icon"
+                                             style="width: 30px; height: 25px">
+                                            <g class="style-scope yt-icon"><path d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z" class="style-scope yt-icon"></path></g>
+                                        </svg>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="min-height:100vh!important;padding-top:70px;">
+        @RenderBody()
+    </div>
+
+
+
+    <div class="section pb-1 mt-3">
+        <div class="col-12 text-center copyright ">
+            <p style="font-size: 20px; ">
+                Copyright © 2023 All rights reserved | Full Stack Developers Kings Of Web Applications
+                <a href="https://eclass.hiast.edu.sy/course/view.php?id=803 ">#HIAST.</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <style>
+        .noti-alert {
+            transform: scale(160%);
+        }
+
+        .copyright p {
+            font-size: 16px !important;
+        }
+
+        @@media (max-width: 991.98px) {
+            .copyright p {
+                transition: all 1s;
+            }
+
+            .copyright p {
+                font-size: 14px !important;
+            }
+
+            .logo {
+                transform: translateY(-50%) !important;
+            }
+        }
+    </style>
+
+    @*<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous"></script>*@
+    @*<script src="~/LayoutAssets/js/aos.js"></script>*@
+    @*<script src="~/LayoutAssets/js/jq.js"></script>*@
+    @*<script src="~/LayoutAssets/js/jquery.sticky.js"> </script>*@
+    @*<script src="~/LayoutAssets/js/custom.js"></script>*@
+
+    @*    <script src="https://cdn.jsdelivr.net/npm/typed.js@@2.0.12"></script>
+    *@
+    @* <script>
+
+    // type a text string in the UI.
+    function typeEffectForError() {
+    var effect = new Typed("#movingTxt", {
+    strings: ['', '@ViewData["Logo"]'],
+    loop: false,
+    typeSpeed: 100,
+    backSpeed: 10,
+    backDelay: 20,
+    cursorChar: ''
+    })
+    }
+    typeEffectForError()
+    </script>*@
+
+
+</body>
+
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", ready);
+    function ready() {
+    }
+</script>
+<script src="~/Notification/signalr/signalr.min.js.map"></script>
+@*<script src="~/Notification/notification.js"></script>*@
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+</script>
+
+<script>
+    "use strict";
+
+    var connection = new signalR.HubConnectionBuilder().withUrl("/NotificationHub").build();
+
+    connection.on
+        (
+            "SendToPOSClerck",
+            (MessageSubject, MessageContent, BroadCastedAt) => {
+
+                console.log(MessageSubject)
+                console.log(MessageContent)
+                swal({
+                    title: MessageSubject,
+                    text: MessageContent + ", Sended At " + BroadCastedAt,
+                    icon: "info",
+                    button: "UMM",
+                })
+
+                try {
+
+
+                    var newRow = document.createElement('tr');
+
+
+                    var subjectCell = document.createElement('td');
+                    subjectCell.className = 'product-name';
+                    subjectCell.textContent = MessageSubject;
+
+                    var contentCell = document.createElement('td');
+                    contentCell.textContent = MessageContent;
+
+                    var broadcastedCell = document.createElement('td');
+                    broadcastedCell.textContent = BroadCastedAt;
+
+
+                    newRow.appendChild(subjectCell);
+                    newRow.appendChild(contentCell);
+                    newRow.appendChild(broadcastedCell);
+
+
+                    var notificationPlace = document.getElementById('notificationPlace');
+
+
+                    if (notificationPlace) {
+
+                        notificationPlace.insertBefore(newRow, notificationPlace.firstChild);
+                    }
+
+
+                }
+                catch (error) {
+                    console.error('An error occurred:', error);
+                }
+
+            }
+        );
+
+    connection.start().catch
+        (
+            function (err) {
+                return console.error(err.toString());
+            }
+        );
+
+</script>
+@RenderSection("Scripts", required: false)

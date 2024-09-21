@@ -1,0 +1,65 @@
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\Services\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.AssemblyReference.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\Services\obj\Debug\netcoreapp3.1\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\Services\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfoInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\Services\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfo.cs
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\Services\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CoreCompileInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.deps.json
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.AssemblyReference.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfoInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfo.cs
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CoreCompileInputs.cache
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CopyComplete
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.dll
+C:\Users\Noha-Lap\Desktop\Project\Mutual-Project\Mutual-Project\ASP\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.deps.json
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.AssemblyReference.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfoInputs.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfo.cs
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CopyComplete
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.dll
+D:\For Karam\HIAST\IT\4-Fourth Year\Second Term\Developping Web Applications\MiniProject\Web Mini Project\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CopyComplete
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\Final Work\Web Mini Project With Identity\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.deps.json
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\ApplicationLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\PersistenceLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.AssemblyReference.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfoInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfo.cs
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CopyComplete
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.dll
+D:\HIAST\FOY\SS\Web Applications Development\PointOfSale\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.pdb
