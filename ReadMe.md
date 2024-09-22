@@ -1,10 +1,10 @@
 # Project Title
 
 This is a Point of Sale (POS) project built using asp .net and SQL Database with Unit of Work.
-Using MVC Architecture and Razor in cshtml files.
+Using MVC Architecture and Razor.
 
 ## Description
-
+A point of sale project implemented using ASP.NET MVC Archiecture and SQL Database (MySQL Server). 
 as we mimic the work of point of sale in a mall, we also provide a web interface to interact with the system.
 it aims to sell products to customers and get them bills alongside adminstration of inventory.
 there are roles and role management specified by log in information.
@@ -25,12 +25,14 @@ each concerned with a complete set of functionalities which are isolated from up
 Contributors names and contact info (Listed in Lexographically Order)
 ### Karam Moussa
 * Name: Karam Moussa
-* email : karam.moussa@hiast.edy.sy
+* email : karammoussa28@gmail.com
+* github: https://github.com/KM0006
 
 
 ### Mohammed Al-Turky
 * Name: Mohammed Al-Turky
-* email : mohamad.alturky@hiast.edy.sy
+* email : m799678@gmail.com
+* github: https://github.com/MohamadAlturky
 
 ### Mohammed Salameh
 * Name: Mohammed Salameh
